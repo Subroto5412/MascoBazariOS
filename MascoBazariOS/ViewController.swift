@@ -89,6 +89,11 @@ class ViewController: UIViewController {
         footerView.clipsToBounds = true
         footerView.layer.cornerRadius = 30
         footerView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
+        
+        
+        menuView.clipsToBounds = true
+        menuView.layer.cornerRadius = 50
+        menuView.layer.maskedCorners = [.layerMaxXMaxYCorner]
     }
     
     
@@ -100,7 +105,7 @@ class ViewController: UIViewController {
         } completion: { (status) in
             self.menuBackgroundView.alpha = 0.0
             UIView.animate(withDuration: 0.1) {
-                self.leadingConstantForMenuView.constant = -280
+                self.leadingConstantForMenuView.constant = -320
                 self.view.layoutIfNeeded()
             } completion: { (status) in
                 self.menuBackgroundView.isHidden = true
@@ -109,59 +114,59 @@ class ViewController: UIViewController {
         }
     }
     
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        if (isMenuShown)
-        {
-             if let touch = touches.first
-            {
-                let location = touch.location(in: menuBackgroundView)
-                beginPoint = location.x
-            }
-        }
-    }
-    
-    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
-        if (isMenuShown)
-        {
-            if let touch = touches.first
-            {
-                let location = touch.location(in: menuBackgroundView)
-                
-                let differenceFromBeginPoint = beginPoint - location.x
-                
-                if (differenceFromBeginPoint>0 || differenceFromBeginPoint<280)
-                {
-                    difference = differenceFromBeginPoint
-                    self.leadingConstantForMenuView.constant = -differenceFromBeginPoint
-                    self.menuBackgroundView.alpha = 0.75-(0.75*differenceFromBeginPoint/280)
-                }
-            }
-        }
-    }
-    
-    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-        if (isMenuShown)
-        {
-            if (difference>140)
-            {
-                UIView.animate(withDuration: 0.1) {
-                    self.leadingConstantForMenuView.constant = -290
-                } completion: { (status) in
-                    self.menuBackgroundView.alpha = 0.0
-                    self.isMenuShown = false
-                    self.menuBackgroundView.isHidden = true
-                }
-            }
-            else{
-                UIView.animate(withDuration: 0.1) {
-                    self.leadingConstantForMenuView.constant = -10
-                } completion: { (status) in
-                    self.menuBackgroundView.alpha = 0.75
-                    self.isMenuShown = true
-                    self.menuBackgroundView.isHidden = false
-                }
-            }
-        }
-    }
+//    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+//        if (isMenuShown)
+//        {
+//             if let touch = touches.first
+//            {
+//                let location = touch.location(in: menuBackgroundView)
+//                beginPoint = location.x
+//            }
+//        }
+//    }
+
+//    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+//        if (isMenuShown)
+//        {
+//            if let touch = touches.first
+//            {
+//                let location = touch.location(in: menuBackgroundView)
+//
+//                let differenceFromBeginPoint = beginPoint - location.x
+//
+//                if (differenceFromBeginPoint>0 || differenceFromBeginPoint<280)
+//                {
+//                    difference = differenceFromBeginPoint
+//                    self.leadingConstantForMenuView.constant = -differenceFromBeginPoint
+//                    self.menuBackgroundView.alpha = 0.75-(0.75*differenceFromBeginPoint/280)
+//                }
+//            }
+//        }
+//    }
+
+//    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+//        if (isMenuShown)
+//        {
+//            if (difference>140)
+//            {
+//                UIView.animate(withDuration: 0.1) {
+//                    self.leadingConstantForMenuView.constant = -290
+//                } completion: { (status) in
+//                    self.menuBackgroundView.alpha = 0.0
+//                    self.isMenuShown = false
+//                    self.menuBackgroundView.isHidden = true
+//                }
+//            }
+//            else{
+//                UIView.animate(withDuration: 0.1) {
+//                    self.leadingConstantForMenuView.constant = -10
+//                } completion: { (status) in
+//                    self.menuBackgroundView.alpha = 0.75
+//                    self.isMenuShown = true
+//                    self.menuBackgroundView.isHidden = false
+//                }
+//            }
+//        }
+//    }
 }
 
