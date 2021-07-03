@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4DBF80882690317500282CCC /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBF80872690317500282CCC /* SideMenuViewController.swift */; };
 		4DD7B5EC268618D900AD5F81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD7B5EB268618D900AD5F81 /* AppDelegate.swift */; };
 		4DD7B5EE268618D900AD5F81 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD7B5ED268618D900AD5F81 /* SceneDelegate.swift */; };
 		4DD7B5F0268618D900AD5F81 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD7B5EF268618D900AD5F81 /* ViewController.swift */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4DBF80872690317500282CCC /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
 		4DD7B5E8268618D900AD5F81 /* MascoBazariOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MascoBazariOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DD7B5EB268618D900AD5F81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4DD7B5ED268618D900AD5F81 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				4DD7B5F4268618DA00AD5F81 /* Assets.xcassets */,
 				4DD7B5F6268618DA00AD5F81 /* LaunchScreen.storyboard */,
 				4DD7B5F9268618DA00AD5F81 /* Info.plist */,
+				4DBF80872690317500282CCC /* SideMenuViewController.swift */,
 			);
 			path = MascoBazariOS;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DBF80882690317500282CCC /* SideMenuViewController.swift in Sources */,
 				4DD7B5F0268618D900AD5F81 /* ViewController.swift in Sources */,
 				4DD7B5EC268618D900AD5F81 /* AppDelegate.swift in Sources */,
 				4DD7B5EE268618D900AD5F81 /* SceneDelegate.swift in Sources */,

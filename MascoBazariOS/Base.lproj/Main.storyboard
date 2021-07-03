@@ -94,6 +94,12 @@
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menu" translatesAutoresizingMaskIntoConstraints="NO" id="vl5-HG-MqO">
                                                                 <rect key="frame" x="25" y="20" width="30" height="20"/>
                                                             </imageView>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PPD-AR-FxB">
+                                                                <rect key="frame" x="17" y="15" width="46" height="30"/>
+                                                                <connections>
+                                                                    <action selector="menuBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TTo-Q6-z3E"/>
+                                                                </connections>
+                                                            </button>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lJu-HU-Wcl">
                                                                 <rect key="frame" x="114" y="7" width="280" height="46"/>
                                                                 <subviews>
@@ -127,6 +133,7 @@
                                                         </subviews>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
+                                                            <constraint firstItem="PPD-AR-FxB" firstAttribute="height" secondItem="vl5-HG-MqO" secondAttribute="height" multiplier="1.5" id="3V8-Fl-Spb"/>
                                                             <constraint firstItem="lJu-HU-Wcl" firstAttribute="width" secondItem="ahJ-5l-DeC" secondAttribute="width" multiplier="280:414" id="C6B-74-CVx"/>
                                                             <constraint firstItem="556-Ky-KfK" firstAttribute="height" secondItem="lJu-HU-Wcl" secondAttribute="height" id="DBr-Nf-k9h"/>
                                                             <constraint firstItem="556-Ky-KfK" firstAttribute="width" secondItem="lJu-HU-Wcl" secondAttribute="width" id="H6Q-ho-Eq8"/>
@@ -134,7 +141,10 @@
                                                             <constraint firstItem="lJu-HU-Wcl" firstAttribute="centerY" secondItem="ahJ-5l-DeC" secondAttribute="centerY" id="ItG-te-hdS"/>
                                                             <constraint firstItem="556-Ky-KfK" firstAttribute="centerY" secondItem="lJu-HU-Wcl" secondAttribute="centerY" id="Kxj-hr-NiV"/>
                                                             <constraint firstAttribute="trailing" secondItem="lJu-HU-Wcl" secondAttribute="trailing" constant="20" id="LoX-X7-SyA"/>
+                                                            <constraint firstItem="PPD-AR-FxB" firstAttribute="centerY" secondItem="vl5-HG-MqO" secondAttribute="centerY" id="Nla-iA-VEE"/>
+                                                            <constraint firstItem="PPD-AR-FxB" firstAttribute="width" secondItem="vl5-HG-MqO" secondAttribute="width" multiplier="1.53333" id="Xc3-Wv-7O2"/>
                                                             <constraint firstItem="vl5-HG-MqO" firstAttribute="centerY" secondItem="ahJ-5l-DeC" secondAttribute="centerY" id="ZcC-uG-kpV"/>
+                                                            <constraint firstItem="PPD-AR-FxB" firstAttribute="centerX" secondItem="vl5-HG-MqO" secondAttribute="centerX" id="eKm-3Z-KB4"/>
                                                             <constraint firstItem="556-Ky-KfK" firstAttribute="centerX" secondItem="lJu-HU-Wcl" secondAttribute="centerX" id="mTV-3o-wRC"/>
                                                             <constraint firstItem="vl5-HG-MqO" firstAttribute="width" secondItem="ahJ-5l-DeC" secondAttribute="width" multiplier="30:414" id="usf-OE-KL0"/>
                                                             <constraint firstItem="vl5-HG-MqO" firstAttribute="leading" secondItem="ahJ-5l-DeC" secondAttribute="leading" constant="25" id="wvz-j3-nJh"/>
@@ -293,26 +303,82 @@
                                     <constraint firstItem="Scb-Ae-Jbu" firstAttribute="top" secondItem="4mP-es-PqW" secondAttribute="bottom" id="yz7-tc-cid"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6oq-ku-ZRq">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="K0N-Sk-ADf" appends="YES" id="RyU-J3-8Y7"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kup-is-5nP">
+                                <rect key="frame" x="-280" y="0.0" width="280" height="736"/>
+                                <subviews>
+                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XcS-sd-Qb1">
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="736"/>
+                                        <connections>
+                                            <segue destination="QIj-V4-YjC" kind="embed" id="Oli-7E-XTt"/>
+                                        </connections>
+                                    </containerView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstItem="XcS-sd-Qb1" firstAttribute="top" secondItem="Kup-is-5nP" secondAttribute="top" id="1yo-Su-v3B"/>
+                                    <constraint firstAttribute="width" constant="280" id="M1w-Ve-fqf"/>
+                                    <constraint firstItem="XcS-sd-Qb1" firstAttribute="leading" secondItem="Kup-is-5nP" secondAttribute="leading" id="TFs-cH-ZTD"/>
+                                    <constraint firstAttribute="bottom" secondItem="XcS-sd-Qb1" secondAttribute="bottom" id="WgG-ZO-ILb"/>
+                                    <constraint firstAttribute="trailing" secondItem="XcS-sd-Qb1" secondAttribute="trailing" id="qx1-nB-hE3"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="Kup-is-5nP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="06N-nj-hmW"/>
                             <constraint firstItem="ZJb-ri-djX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="4Tq-L6-0ng"/>
                             <constraint firstItem="ZJb-ri-djX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="5Iw-hq-Jcb"/>
+                            <constraint firstItem="Kup-is-5nP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="-280" id="Npf-zp-IPE"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ZJb-ri-djX" secondAttribute="bottom" id="RbH-E4-QI7"/>
+                            <constraint firstItem="6oq-ku-ZRq" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Rxl-h2-dMd"/>
+                            <constraint firstItem="6oq-ku-ZRq" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="cly-dA-BZG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Kup-is-5nP" secondAttribute="bottom" id="d7y-6w-2Yw"/>
+                            <constraint firstItem="6oq-ku-ZRq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="f10-ZA-Bew"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZJb-ri-djX" secondAttribute="trailing" id="v7y-uS-mmc"/>
+                            <constraint firstItem="6oq-ku-ZRq" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="wVI-Cv-sHr"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="footerView" destination="fbc-SH-HR7" id="pms-4R-Mbf"/>
+                        <outlet property="leadingConstantForMenuView" destination="Npf-zp-IPE" id="d72-vz-xId"/>
+                        <outlet property="menuBackgroundView" destination="6oq-ku-ZRq" id="SuB-om-e8a"/>
+                        <outlet property="menuView" destination="Kup-is-5nP" id="b8E-Mt-C4O"/>
                         <outlet property="searchingFullView" destination="eUv-6G-cZP" id="Ibe-tq-S7q"/>
                         <outlet property="searchingInnerView" destination="v1L-IC-dLa" id="O4U-xq-63r"/>
                         <outlet property="searchingView" destination="lJu-HU-Wcl" id="HpX-mr-Mg2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="K0N-Sk-ADf">
+                    <connections>
+                        <action selector="topped:" destination="BYZ-38-t0r" id="ifV-3L-DUe"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="28.985507246376812" y="83.967391304347828"/>
+        </scene>
+        <!--Side Menu View Controller-->
+        <scene sceneID="wzq-EZ-6G1">
+            <objects>
+                <viewController id="QIj-V4-YjC" customClass="SideMenuViewController" customModule="MascoBazariOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wyg-2K-zdh">
+                        <rect key="frame" x="0.0" y="0.0" width="280" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lcX-jJ-ULu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-503" y="-528"/>
         </scene>
     </scenes>
     <resources>
@@ -326,6 +392,9 @@
         <image name="searchingBack" width="29.333333969116211" height="29.333333969116211"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
