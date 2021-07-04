@@ -15,6 +15,7 @@
 		4D8FBA94269198A700B0D13B /* montserrat_regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4D8FBA90269198A700B0D13B /* montserrat_regular.otf */; };
 		4D8FBA95269198A700B0D13B /* montserrat_medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4D8FBA91269198A700B0D13B /* montserrat_medium.otf */; };
 		4D8FBA96269198A700B0D13B /* montserrat_bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4D8FBA92269198A700B0D13B /* montserrat_bold.otf */; };
+		4D8FBA9C2691C16800B0D13B /* UIColor+AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8FBA9B2691C16800B0D13B /* UIColor+AppColors.swift */; };
 		4DB302F92691704100A6F735 /* MBSideMenuHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DB302F82691704100A6F735 /* MBSideMenuHeader.xib */; };
 		4DB302FB2691705B00A6F735 /* MBSideMenuHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB302FA2691705B00A6F735 /* MBSideMenuHeader.swift */; };
 		4DB302FD2691828200A6F735 /* MBMenuHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB302FC2691828200A6F735 /* MBMenuHeader.swift */; };
@@ -56,6 +57,7 @@
 		4D8FBA90269198A700B0D13B /* montserrat_regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = montserrat_regular.otf; sourceTree = "<group>"; };
 		4D8FBA91269198A700B0D13B /* montserrat_medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = montserrat_medium.otf; sourceTree = "<group>"; };
 		4D8FBA92269198A700B0D13B /* montserrat_bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = montserrat_bold.otf; sourceTree = "<group>"; };
+		4D8FBA9B2691C16800B0D13B /* UIColor+AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+AppColors.swift"; sourceTree = "<group>"; };
 		4DB302F82691704100A6F735 /* MBSideMenuHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MBSideMenuHeader.xib; sourceTree = "<group>"; };
 		4DB302FA2691705B00A6F735 /* MBSideMenuHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MBSideMenuHeader.swift; sourceTree = "<group>"; };
 		4DB302FC2691828200A6F735 /* MBMenuHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBMenuHeader.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 			children = (
 				4D3DDAB12691645F00CB0A57 /* MBXibView.swift */,
 				4D3DDAB3269164EF00CB0A57 /* NSObject+Extension.swift */,
+				4D8FBA9B2691C16800B0D13B /* UIColor+AppColors.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -334,6 +337,7 @@
 				4DD7B5F0268618D900AD5F81 /* ViewController.swift in Sources */,
 				4DB302FD2691828200A6F735 /* MBMenuHeader.swift in Sources */,
 				4DD7B5EC268618D900AD5F81 /* AppDelegate.swift in Sources */,
+				4D8FBA9C2691C16800B0D13B /* UIColor+AppColors.swift in Sources */,
 				4DD7B5EE268618D900AD5F81 /* SceneDelegate.swift in Sources */,
 				4DB302FB2691705B00A6F735 /* MBSideMenuHeader.swift in Sources */,
 				4D3DDAB22691645F00CB0A57 /* MBXibView.swift in Sources */,
