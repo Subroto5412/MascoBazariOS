@@ -378,9 +378,9 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fyY-Ex-tqs">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="736"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sy3-1f-LhJ">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sy3-1f-LhJ" customClass="MBMenuHeader" customModule="MascoBazariOS" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="126"/>
-                                        <color key="backgroundColor" red="0.3095388114" green="0.58831554649999995" blue="0.2665983737" alpha="0.85259928924358441" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pbk-hI-88p">
                                         <rect key="frame" x="0.0" y="126" width="320" height="280"/>
@@ -499,7 +499,7 @@
                                             <constraint firstAttribute="height" constant="2" id="Zjw-5y-SsM"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WVO-vv-BFp">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WVO-vv-BFp" customClass="MBPhoneNumber" customModule="MascoBazariOS" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="495" width="320" height="100"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     </view>
@@ -605,6 +605,9 @@
                             <constraint firstItem="fyY-Ex-tqs" firstAttribute="top" secondItem="fYE-N6-Zdg" secondAttribute="top" id="zMy-X1-X3B"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mBSideMenuHeader" destination="sy3-1f-LhJ" id="tbY-l7-y2N"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lcX-jJ-ULu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

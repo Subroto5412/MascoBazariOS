@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MBMenuHeader" customModule="MascoBazariOS" customModuleProvider="target">
+            <connections>
+                <outlet property="sideMEnuTopHeaderHover" destination="Gnp-Yc-XA4" id="zyH-6g-YvD"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="126"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hcf-wm-j2n">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="126"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SideMenuTop" translatesAutoresizingMaskIntoConstraints="NO" id="4q1-vU-DRd">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="126"/>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gnp-Yc-XA4">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="126"/>
+                            <color key="backgroundColor" red="0.3095388114" green="0.58831554649999995" blue="0.2665983737" alpha="0.85206230110000003" colorSpace="custom" customColorSpace="displayP3"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Gnp-Yc-XA4" firstAttribute="top" secondItem="hcf-wm-j2n" secondAttribute="top" id="Yzd-Gh-H1S"/>
+                        <constraint firstAttribute="trailing" secondItem="4q1-vU-DRd" secondAttribute="trailing" id="d7d-Kc-cUG"/>
+                        <constraint firstAttribute="bottom" secondItem="4q1-vU-DRd" secondAttribute="bottom" id="gH7-DI-LRn"/>
+                        <constraint firstItem="4q1-vU-DRd" firstAttribute="top" secondItem="hcf-wm-j2n" secondAttribute="top" id="ipz-78-xML"/>
+                        <constraint firstItem="4q1-vU-DRd" firstAttribute="leading" secondItem="hcf-wm-j2n" secondAttribute="leading" id="ksb-Rt-WvH"/>
+                        <constraint firstItem="Gnp-Yc-XA4" firstAttribute="leading" secondItem="hcf-wm-j2n" secondAttribute="leading" id="uIF-iz-arq"/>
+                        <constraint firstAttribute="trailing" secondItem="Gnp-Yc-XA4" secondAttribute="trailing" id="w3B-eP-5KB"/>
+                        <constraint firstAttribute="bottom" secondItem="Gnp-Yc-XA4" secondAttribute="bottom" id="xUu-hH-ZQI"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="hcf-wm-j2n" secondAttribute="bottom" id="I3b-sN-Td2"/>
+                <constraint firstItem="hcf-wm-j2n" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="aoU-R0-DiN"/>
+                <constraint firstItem="hcf-wm-j2n" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="mWK-ly-q6n"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="hcf-wm-j2n" secondAttribute="trailing" id="vry-Ya-bgn"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="131.8840579710145" y="46.467391304347828"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="SideMenuTop" width="320" height="126"/>
+    </resources>
+</document>

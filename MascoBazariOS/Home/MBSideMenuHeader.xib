@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="126"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6ag-gA-uqw">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="126"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SideMenuTop" translatesAutoresizingMaskIntoConstraints="NO" id="YeU-MH-cn1">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="126"/>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KRr-Ng-39Z">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="126"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YjC-dt-eUn">
+                                    <rect key="frame" x="210" y="48" width="46" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" title="Button"/>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="0.3095388114" green="0.58831554649999995" blue="0.2665983737" alpha="0.85206230113048431" colorSpace="custom" customColorSpace="displayP3"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="YeU-MH-cn1" firstAttribute="leading" secondItem="6ag-gA-uqw" secondAttribute="leading" id="Pxw-ii-jCV"/>
+                        <constraint firstItem="KRr-Ng-39Z" firstAttribute="leading" secondItem="6ag-gA-uqw" secondAttribute="leading" id="aAE-ul-f4D"/>
+                        <constraint firstItem="YeU-MH-cn1" firstAttribute="top" secondItem="6ag-gA-uqw" secondAttribute="top" id="fgg-6r-xMD"/>
+                        <constraint firstAttribute="bottom" secondItem="KRr-Ng-39Z" secondAttribute="bottom" id="kgb-dt-wE0"/>
+                        <constraint firstItem="KRr-Ng-39Z" firstAttribute="top" secondItem="6ag-gA-uqw" secondAttribute="top" id="lJk-9a-3Py"/>
+                        <constraint firstAttribute="trailing" secondItem="KRr-Ng-39Z" secondAttribute="trailing" id="mW3-iC-2EE"/>
+                        <constraint firstAttribute="bottom" secondItem="YeU-MH-cn1" secondAttribute="bottom" id="mpo-nQ-T5Z"/>
+                        <constraint firstAttribute="trailing" secondItem="YeU-MH-cn1" secondAttribute="trailing" id="rge-ER-5iY"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="6ag-gA-uqw" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="4Yb-v1-OBU"/>
+                <constraint firstItem="6ag-gA-uqw" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="7Fn-uA-L7v"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="6ag-gA-uqw" secondAttribute="bottom" id="BzJ-W6-bEI"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="6ag-gA-uqw" secondAttribute="trailing" id="EyT-Si-XOX"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="205.79710144927537" y="-77.445652173913047"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="SideMenuTop" width="320" height="126"/>
+    </resources>
+</document>
