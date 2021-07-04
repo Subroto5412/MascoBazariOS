@@ -19,12 +19,15 @@ class SideMenuViewController: UIViewController, UITableViewDelegate, UITableView
     var expandedSectionHeader: UITableViewHeaderFooterView!
     var sectionItems: Array<Any> = []
     var sectionNames: Array<Any> = []
+    var sectionNamesIm: Array<Any> = []
     
+    var arrimg = [#imageLiteral(resourceName: "mascobazar-1"), #imageLiteral(resourceName: "Bag"),#imageLiteral(resourceName: "twitter")]
     override func viewDidLoad() {
         super.viewDidLoad()
         sideMenuHeaderTop()
         
-        sectionNames = [ "iPhone", "iPad", "Apple Watch" ];
+        sectionNames = [ "iPhone", "iPad", "Apple Watch" ]
+        sectionNamesIm = [#imageLiteral(resourceName: "homeHome"), #imageLiteral(resourceName: "twitter"),#imageLiteral(resourceName: "mascobazar-1")]
         sectionItems = [ ["iPhone 5", "iPhone 5s", "iPhone 6", "iPhone 6 Plus", "iPhone 7", "iPhone 7 Plus"],
                          ["iPad Mini", "iPad Air 2", "iPad Pro", "iPad Pro 9.7"],
                          ["Apple Watch", "Apple Watch 2", "Apple Watch 2 (Nike)"]
@@ -106,6 +109,7 @@ class SideMenuViewController: UIViewController, UITableViewDelegate, UITableView
         let section = self.sectionItems[indexPath.section] as! NSArray
         cell.textLabel?.textColor = UIColor.white
         cell.textLabel?.text = section[indexPath.row] as? String
+       // cell.imageView?.image = arrimg[indexPath.row] as? UIImage
         
        
         return cell
@@ -191,7 +195,7 @@ class SideMenuViewController: UIViewController, UITableViewDelegate, UITableView
         mBSideMenuHeader!.sideMEnuTopHeaderHover.layer.maskedCorners = [.layerMinXMaxYCorner]
         
         mBSideMenuHeader!.bagPriceView.clipsToBounds = true
-        mBSideMenuHeader!.bagPriceView.layer.cornerRadius = 20
+        mBSideMenuHeader!.bagPriceView.layer.cornerRadius = 15
         mBSideMenuHeader!.bagPriceView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner, .layerMinXMaxYCorner, .layerMaxXMaxYCorner]
         
         mBSideMenuHeader!.languageBtnView.clipsToBounds = true

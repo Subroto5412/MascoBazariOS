@@ -65,10 +65,10 @@
                                     <rect key="frame" x="335.33333333333331" y="66.333333333333329" width="38.666666666666686" height="25"/>
                                 </imageView>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QZE-h2-76q">
-                                    <rect key="frame" x="342.33333333333331" y="78.333333333333329" width="51.666666666666686" height="38"/>
+                                    <rect key="frame" x="348.66666666666669" y="78.333333333333329" width="45.333333333333314" height="33"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="33" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lDx-6D-YsJ">
-                                            <rect key="frame" x="8.6666666666666856" y="7" width="34" height="24"/>
+                                            <rect key="frame" x="7.6666666666666288" y="6.333333333333341" width="30" height="20.333333333333329"/>
                                             <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="13"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
@@ -105,7 +105,7 @@
                                 <constraint firstAttribute="trailing" secondItem="QZE-h2-76q" secondAttribute="trailing" constant="20" id="FZp-c2-9dL"/>
                                 <constraint firstItem="2KY-m1-YiO" firstAttribute="top" secondItem="OSH-xo-BdQ" secondAttribute="bottom" constant="5" id="GTk-7G-noC"/>
                                 <constraint firstAttribute="trailing" secondItem="45p-qM-eTg" secondAttribute="trailing" constant="20" id="NXk-SN-m26"/>
-                                <constraint firstItem="QZE-h2-76q" firstAttribute="width" secondItem="Gnp-Yc-XA4" secondAttribute="width" multiplier="40:320" id="Pzu-8t-LVp"/>
+                                <constraint firstItem="QZE-h2-76q" firstAttribute="width" secondItem="Gnp-Yc-XA4" secondAttribute="width" multiplier="35:320" id="Pzu-8t-LVp"/>
                                 <constraint firstItem="JvN-Tj-Wsx" firstAttribute="top" secondItem="45p-qM-eTg" secondAttribute="bottom" constant="2" id="QOA-pQ-RCb"/>
                                 <constraint firstItem="myi-sY-7qS" firstAttribute="height" secondItem="Gnp-Yc-XA4" secondAttribute="height" multiplier="25:126" id="VJs-vk-g1t"/>
                                 <constraint firstItem="QZE-h2-76q" firstAttribute="top" secondItem="AII-uO-JAy" secondAttribute="bottom" constant="17" id="Xdi-iQ-4mC"/>
@@ -114,7 +114,7 @@
                                 <constraint firstItem="OSH-xo-BdQ" firstAttribute="top" secondItem="Gnp-Yc-XA4" secondAttribute="top" constant="30" id="a8T-lr-NPe"/>
                                 <constraint firstItem="j4O-7E-jg7" firstAttribute="width" secondItem="Gnp-Yc-XA4" secondAttribute="width" multiplier="32:320" id="imV-cb-Mhd"/>
                                 <constraint firstItem="OSH-xo-BdQ" firstAttribute="width" secondItem="Gnp-Yc-XA4" secondAttribute="width" multiplier="45:320" id="sj4-Mn-VBA"/>
-                                <constraint firstItem="QZE-h2-76q" firstAttribute="height" secondItem="Gnp-Yc-XA4" secondAttribute="height" multiplier="38:126" id="szs-rL-NOM"/>
+                                <constraint firstItem="QZE-h2-76q" firstAttribute="height" secondItem="Gnp-Yc-XA4" secondAttribute="height" multiplier="33:126" id="szs-rL-NOM"/>
                                 <constraint firstAttribute="trailing" secondItem="myi-sY-7qS" secondAttribute="trailing" constant="40" id="u5g-6e-U6j"/>
                                 <constraint firstItem="myi-sY-7qS" firstAttribute="top" secondItem="AII-uO-JAy" secondAttribute="bottom" constant="5" id="ztg-HA-rta"/>
                             </constraints>
