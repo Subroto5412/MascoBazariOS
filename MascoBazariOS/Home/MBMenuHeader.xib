@@ -4,8 +4,14 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="montserrat_semi_bold.otf">
+            <string>Montserrat-SemiBold</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MBMenuHeader" customModule="MascoBazariOS" customModuleProvider="target">
             <connections>
@@ -25,7 +31,50 @@
                         </imageView>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gnp-Yc-XA4">
                             <rect key="frame" x="0.0" y="0.0" width="414" height="126"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="honeDemoPic" translatesAutoresizingMaskIntoConstraints="NO" id="OSH-xo-BdQ">
+                                    <rect key="frame" x="30.000000000000004" y="30" width="58.333333333333343" height="45"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2KY-m1-YiO">
+                                    <rect key="frame" x="29.999999999999993" y="80" width="80.333333333333314" height="17.333333333333329"/>
+                                    <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="14"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wallet Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="45p-qM-eTg">
+                                    <rect key="frame" x="299.66666666666669" y="30.000000000000004" width="94.333333333333314" height="14.666666666666668"/>
+                                    <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="12"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BDT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JvN-Tj-Wsx">
+                                    <rect key="frame" x="299.66666666666669" y="46.666666666666664" width="26.333333333333314" height="14.666666666666664"/>
+                                    <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="12"/>
+                                    <color key="textColor" systemColor="systemYellowColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4231.50" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AII-uO-JAy">
+                                    <rect key="frame" x="332" y="46.666666666666664" width="44.666666666666686" height="14.666666666666664"/>
+                                    <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="12"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
                             <color key="backgroundColor" red="0.3095388114" green="0.58831554649999995" blue="0.2665983737" alpha="0.85206230110000003" colorSpace="custom" customColorSpace="displayP3"/>
+                            <constraints>
+                                <constraint firstItem="JvN-Tj-Wsx" firstAttribute="leading" secondItem="45p-qM-eTg" secondAttribute="leading" id="2wq-gK-aWi"/>
+                                <constraint firstItem="OSH-xo-BdQ" firstAttribute="height" secondItem="Gnp-Yc-XA4" secondAttribute="height" multiplier="45:126" id="3L5-JS-Wj8"/>
+                                <constraint firstItem="45p-qM-eTg" firstAttribute="top" secondItem="Gnp-Yc-XA4" secondAttribute="top" constant="30" id="4mD-AL-4OA"/>
+                                <constraint firstItem="AII-uO-JAy" firstAttribute="leading" secondItem="JvN-Tj-Wsx" secondAttribute="trailing" constant="6" id="5aA-Sg-0Mt"/>
+                                <constraint firstItem="AII-uO-JAy" firstAttribute="top" secondItem="45p-qM-eTg" secondAttribute="bottom" constant="2" id="99x-QH-Dzb"/>
+                                <constraint firstItem="2KY-m1-YiO" firstAttribute="top" secondItem="OSH-xo-BdQ" secondAttribute="bottom" constant="5" id="GTk-7G-noC"/>
+                                <constraint firstAttribute="trailing" secondItem="45p-qM-eTg" secondAttribute="trailing" constant="20" id="NXk-SN-m26"/>
+                                <constraint firstItem="JvN-Tj-Wsx" firstAttribute="top" secondItem="45p-qM-eTg" secondAttribute="bottom" constant="2" id="QOA-pQ-RCb"/>
+                                <constraint firstItem="OSH-xo-BdQ" firstAttribute="leading" secondItem="Gnp-Yc-XA4" secondAttribute="leading" constant="30" id="YsV-u0-IWZ"/>
+                                <constraint firstItem="2KY-m1-YiO" firstAttribute="leading" secondItem="Gnp-Yc-XA4" secondAttribute="leading" constant="30" id="Yzb-kQ-CbS"/>
+                                <constraint firstItem="OSH-xo-BdQ" firstAttribute="top" secondItem="Gnp-Yc-XA4" secondAttribute="top" constant="30" id="a8T-lr-NPe"/>
+                                <constraint firstItem="OSH-xo-BdQ" firstAttribute="width" secondItem="Gnp-Yc-XA4" secondAttribute="width" multiplier="45:320" id="sj4-Mn-VBA"/>
+                            </constraints>
                         </view>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -57,5 +106,9 @@
     </objects>
     <resources>
         <image name="SideMenuTop" width="320" height="126"/>
+        <image name="honeDemoPic" width="45" height="45"/>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>

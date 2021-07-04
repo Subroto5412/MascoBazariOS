@@ -7,6 +7,11 @@
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="montserrat_medium.otf">
+            <string>Montserrat-Medium</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -402,17 +407,10 @@
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camera" translatesAutoresizingMaskIntoConstraints="NO" id="EkD-nQ-1Ov">
                                                         <rect key="frame" x="25" y="5" width="30" height="15"/>
                                                     </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sWe-Pn-9pZ">
-                                                        <rect key="frame" x="10" y="25" width="60" height="28.666666666666671"/>
-                                                        <attributedString key="attributedText">
-                                                            <fragment content="Send Your Bazar List">
-                                                                <attributes>
-                                                                    <color key="NSColor" red="0.89412361380000005" green="0.89410680529999997" blue="0.89411824939999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                                    <font key="NSFont" metaFont="cellTitle"/>
-                                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                </attributes>
-                                                            </fragment>
-                                                        </attributedString>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Send Your Bazar List" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sWe-Pn-9pZ">
+                                                        <rect key="frame" x="5" y="25" width="70" height="29.333333333333329"/>
+                                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="12"/>
+                                                        <color key="textColor" red="0.89412361380000005" green="0.89410680529999997" blue="0.89411824939999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
@@ -422,7 +420,7 @@
                                                     <constraint firstItem="sWe-Pn-9pZ" firstAttribute="centerX" secondItem="5Og-Fi-BWj" secondAttribute="centerX" id="CDX-Fv-CKa"/>
                                                     <constraint firstItem="EkD-nQ-1Ov" firstAttribute="top" secondItem="5Og-Fi-BWj" secondAttribute="top" constant="5" id="CJR-Xh-q9m"/>
                                                     <constraint firstItem="EkD-nQ-1Ov" firstAttribute="width" secondItem="5Og-Fi-BWj" secondAttribute="width" multiplier="30:80" id="KJF-yd-ngM"/>
-                                                    <constraint firstItem="sWe-Pn-9pZ" firstAttribute="width" secondItem="5Og-Fi-BWj" secondAttribute="width" multiplier="60:80" id="aBN-CC-y3c"/>
+                                                    <constraint firstItem="sWe-Pn-9pZ" firstAttribute="width" secondItem="5Og-Fi-BWj" secondAttribute="width" multiplier="70:80" id="aBN-CC-y3c"/>
                                                     <constraint firstItem="EkD-nQ-1Ov" firstAttribute="centerX" secondItem="5Og-Fi-BWj" secondAttribute="centerX" id="oWi-t4-rtD"/>
                                                     <constraint firstItem="sWe-Pn-9pZ" firstAttribute="top" secondItem="EkD-nQ-1Ov" secondAttribute="bottom" constant="5" id="ydX-z6-ZQU"/>
                                                 </constraints>
@@ -434,8 +432,8 @@
                                                         <rect key="frame" x="25" y="5" width="30" height="20"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scan Product" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CYO-4r-eel">
-                                                        <rect key="frame" x="10" y="30" width="60" height="28.666666666666671"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                        <rect key="frame" x="10" y="30" width="60" height="29.333333333333329"/>
+                                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="12"/>
                                                         <color key="textColor" red="0.89412361380000005" green="0.89410680529999997" blue="0.89411824939999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -458,8 +456,8 @@
                                                         <rect key="frame" x="25" y="5" width="30" height="20"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lC9-0A-cI1">
-                                                        <rect key="frame" x="25" y="29.999999999999996" width="30.333333333333329" height="14.333333333333332"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                        <rect key="frame" x="22.666666666666654" y="30.000000000000004" width="34.666666666666657" height="14.666666666666668"/>
+                                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="12"/>
                                                         <color key="textColor" red="0.89412361380000005" green="0.89410680529999997" blue="0.89411824939999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>

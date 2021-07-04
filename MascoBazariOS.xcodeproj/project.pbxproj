@@ -11,6 +11,10 @@
 		4D3DDAB4269164EF00CB0A57 /* NSObject+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3DDAB3269164EF00CB0A57 /* NSObject+Extension.swift */; };
 		4D8FBA8B26918BE600B0D13B /* MBPhoneNumber.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D8FBA8A26918BE600B0D13B /* MBPhoneNumber.xib */; };
 		4D8FBA8D26918BF600B0D13B /* MBPhoneNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8FBA8C26918BF600B0D13B /* MBPhoneNumber.swift */; };
+		4D8FBA93269198A700B0D13B /* montserrat_semi_bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4D8FBA8F269198A700B0D13B /* montserrat_semi_bold.otf */; };
+		4D8FBA94269198A700B0D13B /* montserrat_regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4D8FBA90269198A700B0D13B /* montserrat_regular.otf */; };
+		4D8FBA95269198A700B0D13B /* montserrat_medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4D8FBA91269198A700B0D13B /* montserrat_medium.otf */; };
+		4D8FBA96269198A700B0D13B /* montserrat_bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4D8FBA92269198A700B0D13B /* montserrat_bold.otf */; };
 		4DB302F92691704100A6F735 /* MBSideMenuHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DB302F82691704100A6F735 /* MBSideMenuHeader.xib */; };
 		4DB302FB2691705B00A6F735 /* MBSideMenuHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB302FA2691705B00A6F735 /* MBSideMenuHeader.swift */; };
 		4DB302FD2691828200A6F735 /* MBMenuHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB302FC2691828200A6F735 /* MBMenuHeader.swift */; };
@@ -48,6 +52,10 @@
 		4D3DDAB3269164EF00CB0A57 /* NSObject+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Extension.swift"; sourceTree = "<group>"; };
 		4D8FBA8A26918BE600B0D13B /* MBPhoneNumber.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MBPhoneNumber.xib; sourceTree = "<group>"; };
 		4D8FBA8C26918BF600B0D13B /* MBPhoneNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBPhoneNumber.swift; sourceTree = "<group>"; };
+		4D8FBA8F269198A700B0D13B /* montserrat_semi_bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = montserrat_semi_bold.otf; sourceTree = "<group>"; };
+		4D8FBA90269198A700B0D13B /* montserrat_regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = montserrat_regular.otf; sourceTree = "<group>"; };
+		4D8FBA91269198A700B0D13B /* montserrat_medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = montserrat_medium.otf; sourceTree = "<group>"; };
+		4D8FBA92269198A700B0D13B /* montserrat_bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = montserrat_bold.otf; sourceTree = "<group>"; };
 		4DB302F82691704100A6F735 /* MBSideMenuHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MBSideMenuHeader.xib; sourceTree = "<group>"; };
 		4DB302FA2691705B00A6F735 /* MBSideMenuHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MBSideMenuHeader.swift; sourceTree = "<group>"; };
 		4DB302FC2691828200A6F735 /* MBMenuHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBMenuHeader.swift; sourceTree = "<group>"; };
@@ -103,6 +111,17 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		4D8FBA8E269198A700B0D13B /* font */ = {
+			isa = PBXGroup;
+			children = (
+				4D8FBA8F269198A700B0D13B /* montserrat_semi_bold.otf */,
+				4D8FBA90269198A700B0D13B /* montserrat_regular.otf */,
+				4D8FBA91269198A700B0D13B /* montserrat_medium.otf */,
+				4D8FBA92269198A700B0D13B /* montserrat_bold.otf */,
+			);
+			path = font;
+			sourceTree = "<group>";
+		};
 		4DB302EB2691687500A6F735 /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +160,7 @@
 		4DD7B5EA268618D900AD5F81 /* MascoBazariOS */ = {
 			isa = PBXGroup;
 			children = (
+				4D8FBA8E269198A700B0D13B /* font */,
 				4D3DDAB02691641000CB0A57 /* Extension */,
 				4DD7B5EB268618D900AD5F81 /* AppDelegate.swift */,
 				4DD7B5ED268618D900AD5F81 /* SceneDelegate.swift */,
@@ -277,11 +297,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				4DD7B5F8268618DA00AD5F81 /* LaunchScreen.storyboard in Resources */,
+				4D8FBA96269198A700B0D13B /* montserrat_bold.otf in Resources */,
+				4D8FBA93269198A700B0D13B /* montserrat_semi_bold.otf in Resources */,
 				4DD7B5F5268618DA00AD5F81 /* Assets.xcassets in Resources */,
 				4DD7B5F3268618D900AD5F81 /* Main.storyboard in Resources */,
 				4DB302FF2691829A00A6F735 /* MBMenuHeader.xib in Resources */,
+				4D8FBA94269198A700B0D13B /* montserrat_regular.otf in Resources */,
 				4D8FBA8B26918BE600B0D13B /* MBPhoneNumber.xib in Resources */,
 				4DB302F92691704100A6F735 /* MBSideMenuHeader.xib in Resources */,
+				4D8FBA95269198A700B0D13B /* montserrat_medium.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
