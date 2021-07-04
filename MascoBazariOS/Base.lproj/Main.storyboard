@@ -248,7 +248,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Scb-Ae-Jbu">
                                         <rect key="frame" x="0.0" y="115" width="414" height="100"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homeBanner" translatesAutoresizingMaskIntoConstraints="NO" id="qAL-Aw-cnJ">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homeBanner" translatesAutoresizingMaskIntoConstraints="NO" id="qAL-Aw-cnJ">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
                                             </imageView>
                                         </subviews>
@@ -604,6 +604,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="LogoutBtnView" destination="tpy-mY-zsw" id="hYX-br-bgB"/>
                         <outlet property="mBSideMenuHeader" destination="sy3-1f-LhJ" id="tbY-l7-y2N"/>
                     </connections>
                 </viewController>

@@ -10,6 +10,9 @@ import UIKit
 
 class MBMenuHeader: MBXibView {
     @IBOutlet weak var sideMEnuTopHeaderHover: UIView!
+    @IBOutlet weak var bagPriceView: UIView!
+    @IBOutlet weak var languageBtnView: UIButton!
+    
     @IBOutlet weak var Btn: UIButton!
     
     @IBAction func Vlivk(_ sender: Any) {

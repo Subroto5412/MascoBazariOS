@@ -15,6 +15,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MBMenuHeader" customModule="MascoBazariOS" customModuleProvider="target">
             <connections>
+                <outlet property="bagPriceView" destination="QZE-h2-76q" id="Fr7-Y9-iCn"/>
+                <outlet property="languageBtnView" destination="j4O-7E-jg7" id="zJs-b4-c8y"/>
                 <outlet property="sideMEnuTopHeaderHover" destination="Gnp-Yc-XA4" id="zyH-6g-YvD"/>
             </connections>
         </placeholder>
@@ -59,21 +61,62 @@
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
                                 </label>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bag" translatesAutoresizingMaskIntoConstraints="NO" id="myi-sY-7qS">
+                                    <rect key="frame" x="335.33333333333331" y="66.333333333333329" width="38.666666666666686" height="25"/>
+                                </imageView>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QZE-h2-76q">
+                                    <rect key="frame" x="342.33333333333331" y="78.333333333333329" width="51.666666666666686" height="38"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="33" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lDx-6D-YsJ">
+                                            <rect key="frame" x="8.6666666666666856" y="7" width="34" height="24"/>
+                                            <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="13"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.95402139429999999" green="0.71521049739999998" blue="0.27829200030000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <constraints>
+                                        <constraint firstItem="lDx-6D-YsJ" firstAttribute="width" secondItem="QZE-h2-76q" secondAttribute="width" multiplier="25:38" id="13L-8h-rpq"/>
+                                        <constraint firstItem="lDx-6D-YsJ" firstAttribute="centerX" secondItem="QZE-h2-76q" secondAttribute="centerX" id="AFM-2t-cEd"/>
+                                        <constraint firstItem="lDx-6D-YsJ" firstAttribute="centerY" secondItem="QZE-h2-76q" secondAttribute="centerY" id="Z0G-rI-eCk"/>
+                                        <constraint firstItem="lDx-6D-YsJ" firstAttribute="height" secondItem="QZE-h2-76q" secondAttribute="height" multiplier="25:40" id="tdW-LX-nXY"/>
+                                    </constraints>
+                                </view>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j4O-7E-jg7">
+                                    <rect key="frame" x="104.33333333333333" y="39" width="41.333333333333329" height="30"/>
+                                    <color key="backgroundColor" red="0.20784479380000001" green="0.2078401446" blue="0.20784327389999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="16"/>
+                                    <state key="normal" title="BN">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                </button>
                             </subviews>
                             <color key="backgroundColor" red="0.3095388114" green="0.58831554649999995" blue="0.2665983737" alpha="0.85206230110000003" colorSpace="custom" customColorSpace="displayP3"/>
                             <constraints>
+                                <constraint firstItem="j4O-7E-jg7" firstAttribute="height" secondItem="Gnp-Yc-XA4" secondAttribute="height" multiplier="30:126" id="13J-uM-fAg"/>
                                 <constraint firstItem="JvN-Tj-Wsx" firstAttribute="leading" secondItem="45p-qM-eTg" secondAttribute="leading" id="2wq-gK-aWi"/>
+                                <constraint firstItem="j4O-7E-jg7" firstAttribute="top" secondItem="Gnp-Yc-XA4" secondAttribute="top" constant="39" id="3Bb-ds-r7c"/>
                                 <constraint firstItem="OSH-xo-BdQ" firstAttribute="height" secondItem="Gnp-Yc-XA4" secondAttribute="height" multiplier="45:126" id="3L5-JS-Wj8"/>
                                 <constraint firstItem="45p-qM-eTg" firstAttribute="top" secondItem="Gnp-Yc-XA4" secondAttribute="top" constant="30" id="4mD-AL-4OA"/>
                                 <constraint firstItem="AII-uO-JAy" firstAttribute="leading" secondItem="JvN-Tj-Wsx" secondAttribute="trailing" constant="6" id="5aA-Sg-0Mt"/>
                                 <constraint firstItem="AII-uO-JAy" firstAttribute="top" secondItem="45p-qM-eTg" secondAttribute="bottom" constant="2" id="99x-QH-Dzb"/>
+                                <constraint firstItem="myi-sY-7qS" firstAttribute="width" secondItem="Gnp-Yc-XA4" secondAttribute="width" multiplier="30:320" id="DpH-S5-fOW"/>
+                                <constraint firstItem="j4O-7E-jg7" firstAttribute="leading" secondItem="OSH-xo-BdQ" secondAttribute="trailing" constant="16" id="E91-yl-Hzs"/>
+                                <constraint firstAttribute="trailing" secondItem="QZE-h2-76q" secondAttribute="trailing" constant="20" id="FZp-c2-9dL"/>
                                 <constraint firstItem="2KY-m1-YiO" firstAttribute="top" secondItem="OSH-xo-BdQ" secondAttribute="bottom" constant="5" id="GTk-7G-noC"/>
                                 <constraint firstAttribute="trailing" secondItem="45p-qM-eTg" secondAttribute="trailing" constant="20" id="NXk-SN-m26"/>
+                                <constraint firstItem="QZE-h2-76q" firstAttribute="width" secondItem="Gnp-Yc-XA4" secondAttribute="width" multiplier="40:320" id="Pzu-8t-LVp"/>
                                 <constraint firstItem="JvN-Tj-Wsx" firstAttribute="top" secondItem="45p-qM-eTg" secondAttribute="bottom" constant="2" id="QOA-pQ-RCb"/>
+                                <constraint firstItem="myi-sY-7qS" firstAttribute="height" secondItem="Gnp-Yc-XA4" secondAttribute="height" multiplier="25:126" id="VJs-vk-g1t"/>
+                                <constraint firstItem="QZE-h2-76q" firstAttribute="top" secondItem="AII-uO-JAy" secondAttribute="bottom" constant="17" id="Xdi-iQ-4mC"/>
                                 <constraint firstItem="OSH-xo-BdQ" firstAttribute="leading" secondItem="Gnp-Yc-XA4" secondAttribute="leading" constant="30" id="YsV-u0-IWZ"/>
                                 <constraint firstItem="2KY-m1-YiO" firstAttribute="leading" secondItem="Gnp-Yc-XA4" secondAttribute="leading" constant="30" id="Yzb-kQ-CbS"/>
                                 <constraint firstItem="OSH-xo-BdQ" firstAttribute="top" secondItem="Gnp-Yc-XA4" secondAttribute="top" constant="30" id="a8T-lr-NPe"/>
+                                <constraint firstItem="j4O-7E-jg7" firstAttribute="width" secondItem="Gnp-Yc-XA4" secondAttribute="width" multiplier="32:320" id="imV-cb-Mhd"/>
                                 <constraint firstItem="OSH-xo-BdQ" firstAttribute="width" secondItem="Gnp-Yc-XA4" secondAttribute="width" multiplier="45:320" id="sj4-Mn-VBA"/>
+                                <constraint firstItem="QZE-h2-76q" firstAttribute="height" secondItem="Gnp-Yc-XA4" secondAttribute="height" multiplier="38:126" id="szs-rL-NOM"/>
+                                <constraint firstAttribute="trailing" secondItem="myi-sY-7qS" secondAttribute="trailing" constant="40" id="u5g-6e-U6j"/>
+                                <constraint firstItem="myi-sY-7qS" firstAttribute="top" secondItem="AII-uO-JAy" secondAttribute="bottom" constant="5" id="ztg-HA-rta"/>
                             </constraints>
                         </view>
                     </subviews>
@@ -105,6 +148,7 @@
         </view>
     </objects>
     <resources>
+        <image name="Bag" width="31.333333969116211" height="31.333333969116211"/>
         <image name="SideMenuTop" width="320" height="126"/>
         <image name="honeDemoPic" width="45" height="45"/>
         <systemColor name="systemYellowColor">
