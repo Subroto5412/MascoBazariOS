@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iC6-DP-uqt">
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
@@ -373,7 +373,49 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="28.985507246376812" y="83.967391304347828"/>
+            <point key="canvasLocation" x="-1358" y="-523"/>
+        </scene>
+        <!--Product View Controller-->
+        <scene sceneID="JYq-lU-spS">
+            <objects>
+                <viewController id="iC6-DP-uqt" customClass="MBProductViewController" customModule="MascoBazariOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5gC-3p-a1Q">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nGN-KJ-8U6">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rna-0s-zQb" customClass="MBProductScreenHeader" customModule="MascoBazariOS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="87"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                <constraints>
+                                    <constraint firstItem="rna-0s-zQb" firstAttribute="height" secondItem="nGN-KJ-8U6" secondAttribute="height" multiplier="87:736" id="IXg-vI-znq"/>
+                                    <constraint firstItem="rna-0s-zQb" firstAttribute="leading" secondItem="nGN-KJ-8U6" secondAttribute="leading" id="mwy-qs-LeL"/>
+                                    <constraint firstItem="rna-0s-zQb" firstAttribute="top" secondItem="nGN-KJ-8U6" secondAttribute="top" id="nTz-uh-DDG"/>
+                                    <constraint firstAttribute="trailing" secondItem="rna-0s-zQb" secondAttribute="trailing" id="vlf-fN-rX5"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Gkg-pa-48o"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="nGN-KJ-8U6" firstAttribute="top" secondItem="Gkg-pa-48o" secondAttribute="top" id="4dS-FM-ZwJ"/>
+                            <constraint firstItem="Gkg-pa-48o" firstAttribute="bottom" secondItem="nGN-KJ-8U6" secondAttribute="bottom" id="8cL-dF-2mP"/>
+                            <constraint firstItem="nGN-KJ-8U6" firstAttribute="leading" secondItem="Gkg-pa-48o" secondAttribute="leading" id="TZ9-57-eYM"/>
+                            <constraint firstItem="Gkg-pa-48o" firstAttribute="trailing" secondItem="nGN-KJ-8U6" secondAttribute="trailing" id="vyV-ly-gen"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mbProductScreenHeader" destination="rna-0s-zQb" id="zbI-5l-gIy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="60m-8C-8l0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-978" y="268"/>
         </scene>
         <!--Title-->
         <scene sceneID="wzq-EZ-6G1">
@@ -388,7 +430,7 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sy3-1f-LhJ" customClass="MBMenuHeader" customModule="MascoBazariOS" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="126"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pbk-hI-88p">
                                         <rect key="frame" x="0.0" y="134" width="320" height="280"/>
@@ -542,7 +584,7 @@
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WVO-vv-BFp" customClass="MBPhoneNumber" customModule="MascoBazariOS" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="513" width="320" height="100"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lQD-nS-nfr">
                                         <rect key="frame" x="0.0" y="613" width="320" height="40"/>
@@ -678,6 +720,9 @@
         <image name="youtube" width="32" height="32"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

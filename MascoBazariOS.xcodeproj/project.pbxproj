@@ -16,6 +16,9 @@
 		4D8FBA95269198A700B0D13B /* montserrat_medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4D8FBA91269198A700B0D13B /* montserrat_medium.otf */; };
 		4D8FBA96269198A700B0D13B /* montserrat_bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4D8FBA92269198A700B0D13B /* montserrat_bold.otf */; };
 		4D8FBA9C2691C16800B0D13B /* UIColor+AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8FBA9B2691C16800B0D13B /* UIColor+AppColors.swift */; };
+		4DB0B61E2692CFD3006D691A /* MBProductScreenHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DB0B61D2692CFD3006D691A /* MBProductScreenHeader.xib */; };
+		4DB0B6202692CFE3006D691A /* MBProductScreenHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB0B61F2692CFE3006D691A /* MBProductScreenHeader.swift */; };
+		4DB0B6222692DC85006D691A /* MBProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB0B6212692DC85006D691A /* MBProductViewController.swift */; };
 		4DB302F92691704100A6F735 /* MBSideMenuHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DB302F82691704100A6F735 /* MBSideMenuHeader.xib */; };
 		4DB302FB2691705B00A6F735 /* MBSideMenuHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB302FA2691705B00A6F735 /* MBSideMenuHeader.swift */; };
 		4DB302FD2691828200A6F735 /* MBMenuHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB302FC2691828200A6F735 /* MBMenuHeader.swift */; };
@@ -58,6 +61,9 @@
 		4D8FBA91269198A700B0D13B /* montserrat_medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = montserrat_medium.otf; sourceTree = "<group>"; };
 		4D8FBA92269198A700B0D13B /* montserrat_bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = montserrat_bold.otf; sourceTree = "<group>"; };
 		4D8FBA9B2691C16800B0D13B /* UIColor+AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+AppColors.swift"; sourceTree = "<group>"; };
+		4DB0B61D2692CFD3006D691A /* MBProductScreenHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MBProductScreenHeader.xib; sourceTree = "<group>"; };
+		4DB0B61F2692CFE3006D691A /* MBProductScreenHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBProductScreenHeader.swift; sourceTree = "<group>"; };
+		4DB0B6212692DC85006D691A /* MBProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBProductViewController.swift; sourceTree = "<group>"; };
 		4DB302F82691704100A6F735 /* MBSideMenuHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MBSideMenuHeader.xib; sourceTree = "<group>"; };
 		4DB302FA2691705B00A6F735 /* MBSideMenuHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MBSideMenuHeader.swift; sourceTree = "<group>"; };
 		4DB302FC2691828200A6F735 /* MBMenuHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBMenuHeader.swift; sourceTree = "<group>"; };
@@ -125,6 +131,16 @@
 			path = font;
 			sourceTree = "<group>";
 		};
+		4DB0B61C2692CF8D006D691A /* ProductList */ = {
+			isa = PBXGroup;
+			children = (
+				4DB0B61D2692CFD3006D691A /* MBProductScreenHeader.xib */,
+				4DB0B61F2692CFE3006D691A /* MBProductScreenHeader.swift */,
+				4DB0B6212692DC85006D691A /* MBProductViewController.swift */,
+			);
+			path = ProductList;
+			sourceTree = "<group>";
+		};
 		4DB302EB2691687500A6F735 /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -163,6 +179,7 @@
 		4DD7B5EA268618D900AD5F81 /* MascoBazariOS */ = {
 			isa = PBXGroup;
 			children = (
+				4DB0B61C2692CF8D006D691A /* ProductList */,
 				4D8FBA8E269198A700B0D13B /* font */,
 				4D3DDAB02691641000CB0A57 /* Extension */,
 				4DD7B5EB268618D900AD5F81 /* AppDelegate.swift */,
@@ -300,6 +317,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4DD7B5F8268618DA00AD5F81 /* LaunchScreen.storyboard in Resources */,
+				4DB0B61E2692CFD3006D691A /* MBProductScreenHeader.xib in Resources */,
 				4D8FBA96269198A700B0D13B /* montserrat_bold.otf in Resources */,
 				4D8FBA93269198A700B0D13B /* montserrat_semi_bold.otf in Resources */,
 				4DD7B5F5268618DA00AD5F81 /* Assets.xcassets in Resources */,
@@ -336,9 +354,11 @@
 				4DBF80882690317500282CCC /* SideMenuViewController.swift in Sources */,
 				4DD7B5F0268618D900AD5F81 /* ViewController.swift in Sources */,
 				4DB302FD2691828200A6F735 /* MBMenuHeader.swift in Sources */,
+				4DB0B6222692DC85006D691A /* MBProductViewController.swift in Sources */,
 				4DD7B5EC268618D900AD5F81 /* AppDelegate.swift in Sources */,
 				4D8FBA9C2691C16800B0D13B /* UIColor+AppColors.swift in Sources */,
 				4DD7B5EE268618D900AD5F81 /* SceneDelegate.swift in Sources */,
+				4DB0B6202692CFE3006D691A /* MBProductScreenHeader.swift in Sources */,
 				4DB302FB2691705B00A6F735 /* MBSideMenuHeader.swift in Sources */,
 				4D3DDAB22691645F00CB0A57 /* MBXibView.swift in Sources */,
 				4D8FBA8D26918BF600B0D13B /* MBPhoneNumber.swift in Sources */,
