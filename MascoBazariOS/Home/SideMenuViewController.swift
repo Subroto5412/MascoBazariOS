@@ -26,7 +26,7 @@ class SideMenuViewController: UIViewController, UITableViewDelegate, UITableView
         super.viewDidLoad()
         sideMenuHeaderTop()
         
-        sectionNames = [ "iPhone", "iPad", "Apple Watch" ]
+        sectionNames = [ "     iPhone", "     iPad", "     Apple Watch" ]
         sectionNamesIm = [#imageLiteral(resourceName: "homeHome"), #imageLiteral(resourceName: "twitter"),#imageLiteral(resourceName: "mascobazar-1")]
         sectionItems = [ ["iPhone 5", "iPhone 5s", "iPhone 6", "iPhone 6 Plus", "iPhone 7", "iPhone 7 Plus"],
                          ["iPad Mini", "iPad Air 2", "iPad Pro", "iPad Pro 9.7"],
@@ -97,6 +97,9 @@ class SideMenuViewController: UIViewController, UITableViewDelegate, UITableView
         theImageView.tag = kHeaderSectionTag + section
         header.addSubview(theImageView)
         
+        let theImageView2 = UIImageView(frame: CGRect(x: headerFrame.width - 310, y: 13, width: 18, height: 18));
+        theImageView2.image = arrimg[section]
+        header.addSubview(theImageView2)
         // make headers touchable
         header.tag = section
         let headerTapGesture = UITapGestureRecognizer()
