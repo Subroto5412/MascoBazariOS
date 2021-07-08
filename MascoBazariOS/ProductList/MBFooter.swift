@@ -10,6 +10,7 @@ import UIKit
 
 class MBFooter: MBXibView {
 
+    @IBOutlet weak var bagCircleView: UIView!
     @IBOutlet weak var footerView: UIView!
     /*
     // Only override draw() if you perform custom drawing.

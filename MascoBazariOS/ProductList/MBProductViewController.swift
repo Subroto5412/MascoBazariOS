@@ -88,6 +88,10 @@ class MBProductViewController: UIViewController, UITableViewDelegate, UITableVie
         productSideMenu.clipsToBounds = true
         productSideMenu.layer.cornerRadius = 50
         productSideMenu.layer.maskedCorners = [.layerMaxXMaxYCorner]
+        
+        footerView!.bagCircleView.clipsToBounds = true
+        footerView!.bagCircleView.layer.cornerRadius = 10
+        footerView!.bagCircleView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner, .layerMinXMaxYCorner, .layerMaxXMaxYCorner]
     }
     
     func hideMenuView()
