@@ -13,6 +13,7 @@
 		4D4576DE26942A4600A5305E /* MBFooter.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D4576DD26942A4600A5305E /* MBFooter.xib */; };
 		4D4576E026943A9600A5305E /* MBCardViewRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4576DF26943A9600A5305E /* MBCardViewRadius.swift */; };
 		4D4576E2269452D500A5305E /* MBProductsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4576E1269452D500A5305E /* MBProductsViewCell.swift */; };
+		4D76F9C22696AFC100CA69BD /* MBProductSideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D76F9C12696AFC100CA69BD /* MBProductSideMenuViewController.swift */; };
 		4D8FBA8B26918BE600B0D13B /* MBPhoneNumber.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D8FBA8A26918BE600B0D13B /* MBPhoneNumber.xib */; };
 		4D8FBA8D26918BF600B0D13B /* MBPhoneNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8FBA8C26918BF600B0D13B /* MBPhoneNumber.swift */; };
 		4D8FBA93269198A700B0D13B /* montserrat_semi_bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4D8FBA8F269198A700B0D13B /* montserrat_semi_bold.otf */; };
@@ -62,6 +63,7 @@
 		4D4576DD26942A4600A5305E /* MBFooter.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MBFooter.xib; sourceTree = "<group>"; };
 		4D4576DF26943A9600A5305E /* MBCardViewRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBCardViewRadius.swift; sourceTree = "<group>"; };
 		4D4576E1269452D500A5305E /* MBProductsViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBProductsViewCell.swift; sourceTree = "<group>"; };
+		4D76F9C12696AFC100CA69BD /* MBProductSideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBProductSideMenuViewController.swift; sourceTree = "<group>"; };
 		4D8FBA8A26918BE600B0D13B /* MBPhoneNumber.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MBPhoneNumber.xib; sourceTree = "<group>"; };
 		4D8FBA8C26918BF600B0D13B /* MBPhoneNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBPhoneNumber.swift; sourceTree = "<group>"; };
 		4D8FBA8F269198A700B0D13B /* montserrat_semi_bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = montserrat_semi_bold.otf; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 				4D4576DB26942A3300A5305E /* MBFooter.swift */,
 				4D4576DD26942A4600A5305E /* MBFooter.xib */,
 				4D4576E1269452D500A5305E /* MBProductsViewCell.swift */,
+				4D76F9C12696AFC100CA69BD /* MBProductSideMenuViewController.swift */,
 			);
 			path = ProductList;
 			sourceTree = "<group>";
@@ -373,6 +376,7 @@
 				4D8FBA9C2691C16800B0D13B /* UIColor+AppColors.swift in Sources */,
 				4DD7B5EE268618D900AD5F81 /* SceneDelegate.swift in Sources */,
 				4DB0B6202692CFE3006D691A /* MBProductScreenHeader.swift in Sources */,
+				4D76F9C22696AFC100CA69BD /* MBProductSideMenuViewController.swift in Sources */,
 				4DB302FB2691705B00A6F735 /* MBSideMenuHeader.swift in Sources */,
 				4D3DDAB22691645F00CB0A57 /* MBXibView.swift in Sources */,
 				4D4576E2269452D500A5305E /* MBProductsViewCell.swift in Sources */,

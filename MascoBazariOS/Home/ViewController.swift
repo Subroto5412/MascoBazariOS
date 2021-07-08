@@ -97,7 +97,7 @@ class ViewController: UIViewController {
     }
     
     
-    private func hideMenuView()
+    func hideMenuView()
     {
         UIView.animate(withDuration: 0.1) {
             self.leadingConstantForMenuView.constant = 10

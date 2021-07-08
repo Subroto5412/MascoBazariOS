@@ -10,17 +10,37 @@ import UIKit
 
 class MBProductViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    @IBOutlet weak var productSideMenuBackgroundView: UIView!
+    @IBOutlet weak var productSideMenu: UIView!
+    @IBOutlet weak var productMenuLeadingConstraint: NSLayoutConstraint!
+    
     @IBOutlet weak var mbProductScreenHeader: MBProductScreenHeader!
     @IBOutlet weak var tableView: UITableView!
     var array = ["Masco Bazar Honey (Mustard Flower (Gold) (Mustard Flower (Gold)","Masco Bazar Honey (Mustard Flower (Gold) (Mustard Flower (Gold)","Masco Bazar Honey (Mustard Flower (Gold) (Mustard Flower (Gold)","Masco Bazar Honey (Mustard Flower (Gold) (Mustard Flower (Gold)","Masco Bazar Honey (Mustard Flower (Gold) (Mustard Flower (Gold)","Masco Bazar Honey (Mustard Flower (Gold) (Mustard Flower (Gold)","Masco Bazar Honey (Mustard Flower (Gold) (Mustard Flower (Gold)","Masco Bazar Honey (Mustard Flower (Gold) (Mustard Flower (Gold)"]
     
     @IBOutlet weak var footerView: MBFooter!
     
+     var isMenuShown:Bool = false
+     var beginPoint:CGFloat = 0.0
+     var difference:CGFloat = 0.0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         roundCorner()
-        // Do any additional setup after loading the view.
+        
+        self.mbProductScreenHeader.sideMenuBtnHandler = {
+                   [weak self] (isShow) in
+                   guard let weakSelf = self else {
+                   return
+                  }
+               weakSelf.showSideMenuBtnHandler()
+           }
     }
+    
+    @IBAction func tapAnyWhere(_ sender: Any) {
+        self.hideMenuView()
+    }
+    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return array.count
@@ -64,6 +84,46 @@ class MBProductViewController: UIViewController, UITableViewDelegate, UITableVie
         footerView.footerView.clipsToBounds = true
         footerView.footerView.layer.cornerRadius = 30
         footerView.footerView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
+        
+        productSideMenu.clipsToBounds = true
+        productSideMenu.layer.cornerRadius = 50
+        productSideMenu.layer.maskedCorners = [.layerMaxXMaxYCorner]
+    }
+    
+    func hideMenuView()
+    {
+        UIView.animate(withDuration: 0.1) {
+            self.productMenuLeadingConstraint.constant = 10
+            self.view.layoutIfNeeded()
+        } completion: { (status) in
+            self.productSideMenuBackgroundView.alpha = 0.0
+            UIView.animate(withDuration: 0.1) {
+                self.productMenuLeadingConstraint.constant = -320
+                self.view.layoutIfNeeded()
+            } completion: { (status) in
+                self.productSideMenuBackgroundView.isHidden = true
+                self.isMenuShown = false
+            }
+        }
     }
 
+    func showSideMenuBtnHandler() {
+         
+        UIView.animate(withDuration: 0.1) {
+            self.productMenuLeadingConstraint.constant = 10
+            self.view.layoutIfNeeded()
+        } completion: { (status) in
+            self.productSideMenuBackgroundView.alpha = 0.75
+            self.productSideMenuBackgroundView.isHidden = false
+            UIView.animate(withDuration: 0.1) {
+                self.productMenuLeadingConstraint.constant = 0
+                self.view.layoutIfNeeded()
+            } completion: { (status) in
+                self.isMenuShown = true
+            }
+
+        }
+        self.productSideMenuBackgroundView.isHidden = false
+        
+    }
 }
