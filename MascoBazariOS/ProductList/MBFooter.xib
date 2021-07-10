@@ -92,6 +92,12 @@
                                         <constraint firstItem="LPb-vM-DQt" firstAttribute="centerX" secondItem="uRp-Oi-Swl" secondAttribute="centerX" id="i22-LR-nT7"/>
                                     </constraints>
                                 </view>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tpA-Ih-cUc">
+                                    <rect key="frame" x="326" y="45" width="58" height="45"/>
+                                    <connections>
+                                        <action selector="myOrderBtn:" destination="-1" eventType="touchUpInside" id="Xq3-VC-23I"/>
+                                    </connections>
+                                </button>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g7v-Ot-kYa">
                                     <rect key="frame" x="285" y="45" width="31" height="45"/>
                                     <subviews>
@@ -99,7 +105,7 @@
                                             <rect key="frame" x="5.6666666666666856" y="0.0" width="20" height="23"/>
                                         </imageView>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qF8-UM-ONO">
-                                            <rect key="frame" x="11" y="3" width="20" height="20"/>
+                                            <rect key="frame" x="11" y="7" width="20" height="20"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="33" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LnT-ez-etd">
                                                     <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
@@ -131,7 +137,7 @@
                                         <constraint firstItem="UGi-uZ-TBj" firstAttribute="centerX" secondItem="g7v-Ot-kYa" secondAttribute="centerX" id="EQw-3C-z9N"/>
                                         <constraint firstItem="UGi-uZ-TBj" firstAttribute="height" secondItem="g7v-Ot-kYa" secondAttribute="height" multiplier="20:39" id="OL2-Ew-yZ2"/>
                                         <constraint firstItem="qF8-UM-ONO" firstAttribute="width" secondItem="g7v-Ot-kYa" secondAttribute="width" multiplier="20:31" id="bbH-SI-Kus"/>
-                                        <constraint firstItem="qF8-UM-ONO" firstAttribute="top" secondItem="g7v-Ot-kYa" secondAttribute="top" constant="3" id="hLA-uJ-vLf"/>
+                                        <constraint firstItem="qF8-UM-ONO" firstAttribute="top" secondItem="g7v-Ot-kYa" secondAttribute="top" constant="7" id="hLA-uJ-vLf"/>
                                         <constraint firstItem="UGi-uZ-TBj" firstAttribute="width" secondItem="g7v-Ot-kYa" secondAttribute="width" multiplier="20:31" id="obH-0O-pIH"/>
                                         <constraint firstItem="qF8-UM-ONO" firstAttribute="height" secondItem="g7v-Ot-kYa" secondAttribute="height" multiplier="20:45" id="oxY-pZ-yRc"/>
                                         <constraint firstItem="UGi-uZ-TBj" firstAttribute="top" secondItem="g7v-Ot-kYa" secondAttribute="top" id="qtQ-A2-ENo"/>
@@ -197,6 +203,7 @@
                             </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
+                                <constraint firstItem="tpA-Ih-cUc" firstAttribute="centerX" secondItem="uRp-Oi-Swl" secondAttribute="centerX" id="0ic-aX-ZOd"/>
                                 <constraint firstItem="uRp-Oi-Swl" firstAttribute="leading" secondItem="g7v-Ot-kYa" secondAttribute="trailing" constant="10" id="3HF-uk-JG6"/>
                                 <constraint firstItem="LtA-En-HKw" firstAttribute="height" secondItem="Acz-WN-Q7A" secondAttribute="height" multiplier="65:117" id="AZj-HF-aIu"/>
                                 <constraint firstItem="LtA-En-HKw" firstAttribute="width" secondItem="Acz-WN-Q7A" secondAttribute="width" multiplier="65:414" id="CbC-DM-os3"/>
@@ -209,10 +216,13 @@
                                 <constraint firstItem="LtA-En-HKw" firstAttribute="centerX" secondItem="Acz-WN-Q7A" secondAttribute="centerX" id="Yv8-il-wmm"/>
                                 <constraint firstAttribute="trailing" secondItem="uRp-Oi-Swl" secondAttribute="trailing" constant="30" id="aLZ-sZ-Su1"/>
                                 <constraint firstItem="Y3f-8W-69O" firstAttribute="height" secondItem="Acz-WN-Q7A" secondAttribute="height" multiplier="50:117" id="b6C-jH-Ayb"/>
+                                <constraint firstItem="tpA-Ih-cUc" firstAttribute="height" secondItem="uRp-Oi-Swl" secondAttribute="height" id="cwK-op-fzO"/>
                                 <constraint firstItem="uRp-Oi-Swl" firstAttribute="height" secondItem="Acz-WN-Q7A" secondAttribute="height" multiplier="45:117" id="edK-IB-PnW"/>
                                 <constraint firstItem="LtA-En-HKw" firstAttribute="top" secondItem="Acz-WN-Q7A" secondAttribute="top" id="ev3-3Y-bwb"/>
                                 <constraint firstItem="g7v-Ot-kYa" firstAttribute="height" secondItem="Acz-WN-Q7A" secondAttribute="height" multiplier="45:117" id="jm9-th-7uz"/>
                                 <constraint firstItem="Y3f-8W-69O" firstAttribute="width" secondItem="Acz-WN-Q7A" secondAttribute="width" multiplier="135:414" id="lwg-9F-cUM"/>
+                                <constraint firstItem="tpA-Ih-cUc" firstAttribute="centerY" secondItem="uRp-Oi-Swl" secondAttribute="centerY" id="wXu-jc-pT2"/>
+                                <constraint firstItem="tpA-Ih-cUc" firstAttribute="width" secondItem="uRp-Oi-Swl" secondAttribute="width" id="xgR-DX-VAL"/>
                             </constraints>
                         </view>
                     </subviews>

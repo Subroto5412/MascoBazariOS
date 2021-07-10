@@ -19,5 +19,9 @@ class MBFooter: MBXibView {
         // Drawing code
     }
     */
-
+    
+    @IBAction func myOrderBtn(_ sender: UIButton) {
+        
+        print("----sumon-----")
+    }
 }

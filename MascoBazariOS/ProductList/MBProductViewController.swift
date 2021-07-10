@@ -60,6 +60,14 @@ class MBProductViewController: UIViewController, UITableViewDelegate, UITableVie
 //        return cell!
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        var section = self.array[indexPath.section]
+       // var x = section[indexPath.row] as? String
+        //print(x!)
+        MBProductDetailsDialog.instance.showAlert(index: section)
+//        MBProductDetailsDialog.instance.showAlert(title: "Success", message: "You are succesfully loged into the system.")
+    }
+    
     
 //    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 //       // self.view.backgroundColor = UIColor.blue

@@ -13,6 +13,8 @@
 		4D4576DE26942A4600A5305E /* MBFooter.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D4576DD26942A4600A5305E /* MBFooter.xib */; };
 		4D4576E026943A9600A5305E /* MBCardViewRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4576DF26943A9600A5305E /* MBCardViewRadius.swift */; };
 		4D4576E2269452D500A5305E /* MBProductsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4576E1269452D500A5305E /* MBProductsViewCell.swift */; };
+		4D5D0E7D2699555300E27F41 /* MBProductDetailsDialog.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D5D0E7C2699555300E27F41 /* MBProductDetailsDialog.xib */; };
+		4D5D0E7F2699558600E27F41 /* MBProductDetailsDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5D0E7E2699558600E27F41 /* MBProductDetailsDialog.swift */; };
 		4D76F9C22696AFC100CA69BD /* MBProductSideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D76F9C12696AFC100CA69BD /* MBProductSideMenuViewController.swift */; };
 		4D8FBA8B26918BE600B0D13B /* MBPhoneNumber.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D8FBA8A26918BE600B0D13B /* MBPhoneNumber.xib */; };
 		4D8FBA8D26918BF600B0D13B /* MBPhoneNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8FBA8C26918BF600B0D13B /* MBPhoneNumber.swift */; };
@@ -28,6 +30,7 @@
 		4DB302FB2691705B00A6F735 /* MBSideMenuHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB302FA2691705B00A6F735 /* MBSideMenuHeader.swift */; };
 		4DB302FD2691828200A6F735 /* MBMenuHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB302FC2691828200A6F735 /* MBMenuHeader.swift */; };
 		4DB302FF2691829A00A6F735 /* MBMenuHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DB302FE2691829A00A6F735 /* MBMenuHeader.xib */; };
+		4DB3AAF92697109C003E2F2A /* MBHomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB3AAF82697109C003E2F2A /* MBHomeCollectionViewCell.swift */; };
 		4DBF80882690317500282CCC /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBF80872690317500282CCC /* SideMenuViewController.swift */; };
 		4DD7B5EC268618D900AD5F81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD7B5EB268618D900AD5F81 /* AppDelegate.swift */; };
 		4DD7B5EE268618D900AD5F81 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD7B5ED268618D900AD5F81 /* SceneDelegate.swift */; };
@@ -63,6 +66,8 @@
 		4D4576DD26942A4600A5305E /* MBFooter.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MBFooter.xib; sourceTree = "<group>"; };
 		4D4576DF26943A9600A5305E /* MBCardViewRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBCardViewRadius.swift; sourceTree = "<group>"; };
 		4D4576E1269452D500A5305E /* MBProductsViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBProductsViewCell.swift; sourceTree = "<group>"; };
+		4D5D0E7C2699555300E27F41 /* MBProductDetailsDialog.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MBProductDetailsDialog.xib; sourceTree = "<group>"; };
+		4D5D0E7E2699558600E27F41 /* MBProductDetailsDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBProductDetailsDialog.swift; sourceTree = "<group>"; };
 		4D76F9C12696AFC100CA69BD /* MBProductSideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBProductSideMenuViewController.swift; sourceTree = "<group>"; };
 		4D8FBA8A26918BE600B0D13B /* MBPhoneNumber.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MBPhoneNumber.xib; sourceTree = "<group>"; };
 		4D8FBA8C26918BF600B0D13B /* MBPhoneNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBPhoneNumber.swift; sourceTree = "<group>"; };
@@ -78,6 +83,7 @@
 		4DB302FA2691705B00A6F735 /* MBSideMenuHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MBSideMenuHeader.swift; sourceTree = "<group>"; };
 		4DB302FC2691828200A6F735 /* MBMenuHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBMenuHeader.swift; sourceTree = "<group>"; };
 		4DB302FE2691829A00A6F735 /* MBMenuHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MBMenuHeader.xib; sourceTree = "<group>"; };
+		4DB3AAF82697109C003E2F2A /* MBHomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBHomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		4DBF80872690317500282CCC /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
 		4DD7B5E8268618D900AD5F81 /* MascoBazariOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MascoBazariOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DD7B5EB268618D900AD5F81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -152,6 +158,8 @@
 				4D4576DD26942A4600A5305E /* MBFooter.xib */,
 				4D4576E1269452D500A5305E /* MBProductsViewCell.swift */,
 				4D76F9C12696AFC100CA69BD /* MBProductSideMenuViewController.swift */,
+				4D5D0E7C2699555300E27F41 /* MBProductDetailsDialog.xib */,
+				4D5D0E7E2699558600E27F41 /* MBProductDetailsDialog.swift */,
 			);
 			path = ProductList;
 			sourceTree = "<group>";
@@ -167,6 +175,7 @@
 				4DB302FE2691829A00A6F735 /* MBMenuHeader.xib */,
 				4D8FBA8A26918BE600B0D13B /* MBPhoneNumber.xib */,
 				4D8FBA8C26918BF600B0D13B /* MBPhoneNumber.swift */,
+				4DB3AAF82697109C003E2F2A /* MBHomeCollectionViewCell.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -343,6 +352,7 @@
 				4D8FBA8B26918BE600B0D13B /* MBPhoneNumber.xib in Resources */,
 				4DB302F92691704100A6F735 /* MBSideMenuHeader.xib in Resources */,
 				4D8FBA95269198A700B0D13B /* montserrat_medium.otf in Resources */,
+				4D5D0E7D2699555300E27F41 /* MBProductDetailsDialog.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,12 +377,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DB3AAF92697109C003E2F2A /* MBHomeCollectionViewCell.swift in Sources */,
 				4DBF80882690317500282CCC /* SideMenuViewController.swift in Sources */,
 				4DD7B5F0268618D900AD5F81 /* ViewController.swift in Sources */,
 				4DB302FD2691828200A6F735 /* MBMenuHeader.swift in Sources */,
 				4DB0B6222692DC85006D691A /* MBProductViewController.swift in Sources */,
 				4DD7B5EC268618D900AD5F81 /* AppDelegate.swift in Sources */,
 				4D4576DC26942A3300A5305E /* MBFooter.swift in Sources */,
+				4D5D0E7F2699558600E27F41 /* MBProductDetailsDialog.swift in Sources */,
 				4D8FBA9C2691C16800B0D13B /* UIColor+AppColors.swift in Sources */,
 				4DD7B5EE268618D900AD5F81 /* SceneDelegate.swift in Sources */,
 				4DB0B6202692CFE3006D691A /* MBProductScreenHeader.swift in Sources */,
