@@ -28,6 +28,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     private var beginPoint:CGFloat = 0.0
     private var difference:CGFloat = 0.0
     
+    @IBOutlet weak var popUpMenuView: MBPopupMenu!
     var arrlbl = ["Watch1","Watch2","Watch3","Watch4","Watch5","Watch6","Watch7","Watch8","Watch9","Watch10","Watch11","Watch12","Watch13","Watch14","Watch15","Watch16","Watch17","Watch18","Watch19","Watch20"]
     
     var sideMenuViewController : SideMenuViewController?
@@ -75,7 +76,15 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         searchingFullView.isHidden = true
     }
     
-
+    @IBAction func popUpMenuBtn(_ sender: UIButton) {
+        if self.popUpMenuView.isHidden == false {
+            self.popUpMenuView.isHidden = true
+        }else{
+            self.popUpMenuView.isHidden = false
+        }
+        
+    }
+    
     @IBAction func searchingAllClearBtn(_ sender: UIButton) {
     }
     
@@ -122,6 +131,10 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         footerView!.bagCircleView.clipsToBounds = true
         footerView!.bagCircleView.layer.cornerRadius = 10
         footerView!.bagCircleView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner, .layerMinXMaxYCorner, .layerMaxXMaxYCorner]
+        
+        popUpMenuView!.popupMenuView.clipsToBounds = true
+        popUpMenuView!.popupMenuView.layer.cornerRadius = 45
+        popUpMenuView!.popupMenuView.layer.maskedCorners = [.layerMinXMaxYCorner]
     }
     
     

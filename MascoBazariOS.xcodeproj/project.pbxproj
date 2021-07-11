@@ -32,6 +32,13 @@
 		4DB302FF2691829A00A6F735 /* MBMenuHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DB302FE2691829A00A6F735 /* MBMenuHeader.xib */; };
 		4DB3AAF92697109C003E2F2A /* MBHomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB3AAF82697109C003E2F2A /* MBHomeCollectionViewCell.swift */; };
 		4DBF80882690317500282CCC /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBF80872690317500282CCC /* SideMenuViewController.swift */; };
+		4DC7A202269A9A3F00687C35 /* MBCommonHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DC7A201269A9A3F00687C35 /* MBCommonHeader.xib */; };
+		4DC7A204269A9C9500687C35 /* MBCommonHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC7A203269A9C9500687C35 /* MBCommonHeader.swift */; };
+		4DC7A206269AAF0700687C35 /* MBOtpHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DC7A205269AAF0700687C35 /* MBOtpHeader.xib */; };
+		4DC7A208269AB19500687C35 /* MBOtpHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC7A207269AB19500687C35 /* MBOtpHeader.swift */; };
+		4DC7A20D269AB48A00687C35 /* MBOTPVerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC7A20C269AB48A00687C35 /* MBOTPVerificationViewController.swift */; };
+		4DC7A20F269AC10800687C35 /* MBPopupMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DC7A20E269AC10800687C35 /* MBPopupMenu.xib */; };
+		4DC7A211269AE53300687C35 /* MBPopupMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC7A210269AE53300687C35 /* MBPopupMenu.swift */; };
 		4DD7B5EC268618D900AD5F81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD7B5EB268618D900AD5F81 /* AppDelegate.swift */; };
 		4DD7B5EE268618D900AD5F81 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD7B5ED268618D900AD5F81 /* SceneDelegate.swift */; };
 		4DD7B5F0268618D900AD5F81 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD7B5EF268618D900AD5F81 /* ViewController.swift */; };
@@ -40,6 +47,7 @@
 		4DD7B5F8268618DA00AD5F81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DD7B5F6268618DA00AD5F81 /* LaunchScreen.storyboard */; };
 		4DD7B603268618DA00AD5F81 /* MascoBazariOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD7B602268618DA00AD5F81 /* MascoBazariOSTests.swift */; };
 		4DD7B60E268618DA00AD5F81 /* MascoBazariOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD7B60D268618DA00AD5F81 /* MascoBazariOSUITests.swift */; };
+		4DD9DEF02699A791005D51DC /* MBOTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD9DEEF2699A791005D51DC /* MBOTPViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +93,13 @@
 		4DB302FE2691829A00A6F735 /* MBMenuHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MBMenuHeader.xib; sourceTree = "<group>"; };
 		4DB3AAF82697109C003E2F2A /* MBHomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBHomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		4DBF80872690317500282CCC /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
+		4DC7A201269A9A3F00687C35 /* MBCommonHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MBCommonHeader.xib; sourceTree = "<group>"; };
+		4DC7A203269A9C9500687C35 /* MBCommonHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBCommonHeader.swift; sourceTree = "<group>"; };
+		4DC7A205269AAF0700687C35 /* MBOtpHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MBOtpHeader.xib; sourceTree = "<group>"; };
+		4DC7A207269AB19500687C35 /* MBOtpHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBOtpHeader.swift; sourceTree = "<group>"; };
+		4DC7A20C269AB48A00687C35 /* MBOTPVerificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBOTPVerificationViewController.swift; sourceTree = "<group>"; };
+		4DC7A20E269AC10800687C35 /* MBPopupMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MBPopupMenu.xib; sourceTree = "<group>"; };
+		4DC7A210269AE53300687C35 /* MBPopupMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBPopupMenu.swift; sourceTree = "<group>"; };
 		4DD7B5E8268618D900AD5F81 /* MascoBazariOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MascoBazariOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DD7B5EB268618D900AD5F81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4DD7B5ED268618D900AD5F81 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -99,6 +114,7 @@
 		4DD7B609268618DA00AD5F81 /* MascoBazariOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MascoBazariOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DD7B60D268618DA00AD5F81 /* MascoBazariOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MascoBazariOSUITests.swift; sourceTree = "<group>"; };
 		4DD7B60F268618DA00AD5F81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DD9DEEF2699A791005D51DC /* MBOTPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBOTPViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,8 +192,18 @@
 				4D8FBA8A26918BE600B0D13B /* MBPhoneNumber.xib */,
 				4D8FBA8C26918BF600B0D13B /* MBPhoneNumber.swift */,
 				4DB3AAF82697109C003E2F2A /* MBHomeCollectionViewCell.swift */,
+				4DC7A20E269AC10800687C35 /* MBPopupMenu.xib */,
+				4DC7A210269AE53300687C35 /* MBPopupMenu.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		4DC7A209269AB42200687C35 /* otpVerification */ = {
+			isa = PBXGroup;
+			children = (
+				4DC7A20C269AB48A00687C35 /* MBOTPVerificationViewController.swift */,
+			);
+			path = otpVerification;
 			sourceTree = "<group>";
 		};
 		4DD7B5DF268618D900AD5F81 = {
@@ -203,6 +229,8 @@
 		4DD7B5EA268618D900AD5F81 /* MascoBazariOS */ = {
 			isa = PBXGroup;
 			children = (
+				4DC7A209269AB42200687C35 /* otpVerification */,
+				4DD9DEEE2699A752005D51DC /* otp */,
 				4DB0B61C2692CF8D006D691A /* ProductList */,
 				4D8FBA8E269198A700B0D13B /* font */,
 				4D3DDAB02691641000CB0A57 /* Extension */,
@@ -233,6 +261,18 @@
 				4DD7B60F268618DA00AD5F81 /* Info.plist */,
 			);
 			path = MascoBazariOSUITests;
+			sourceTree = "<group>";
+		};
+		4DD9DEEE2699A752005D51DC /* otp */ = {
+			isa = PBXGroup;
+			children = (
+				4DD9DEEF2699A791005D51DC /* MBOTPViewController.swift */,
+				4DC7A201269A9A3F00687C35 /* MBCommonHeader.xib */,
+				4DC7A203269A9C9500687C35 /* MBCommonHeader.swift */,
+				4DC7A205269AAF0700687C35 /* MBOtpHeader.xib */,
+				4DC7A207269AB19500687C35 /* MBOtpHeader.swift */,
+			);
+			path = otp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -342,11 +382,14 @@
 			files = (
 				4DD7B5F8268618DA00AD5F81 /* LaunchScreen.storyboard in Resources */,
 				4DB0B61E2692CFD3006D691A /* MBProductScreenHeader.xib in Resources */,
+				4DC7A202269A9A3F00687C35 /* MBCommonHeader.xib in Resources */,
 				4D8FBA96269198A700B0D13B /* montserrat_bold.otf in Resources */,
 				4D8FBA93269198A700B0D13B /* montserrat_semi_bold.otf in Resources */,
 				4DD7B5F5268618DA00AD5F81 /* Assets.xcassets in Resources */,
 				4DD7B5F3268618D900AD5F81 /* Main.storyboard in Resources */,
 				4DB302FF2691829A00A6F735 /* MBMenuHeader.xib in Resources */,
+				4DC7A20F269AC10800687C35 /* MBPopupMenu.xib in Resources */,
+				4DC7A206269AAF0700687C35 /* MBOtpHeader.xib in Resources */,
 				4D4576DE26942A4600A5305E /* MBFooter.xib in Resources */,
 				4D8FBA94269198A700B0D13B /* montserrat_regular.otf in Resources */,
 				4D8FBA8B26918BE600B0D13B /* MBPhoneNumber.xib in Resources */,
@@ -385,11 +428,16 @@
 				4DD7B5EC268618D900AD5F81 /* AppDelegate.swift in Sources */,
 				4D4576DC26942A3300A5305E /* MBFooter.swift in Sources */,
 				4D5D0E7F2699558600E27F41 /* MBProductDetailsDialog.swift in Sources */,
+				4DC7A204269A9C9500687C35 /* MBCommonHeader.swift in Sources */,
+				4DD9DEF02699A791005D51DC /* MBOTPViewController.swift in Sources */,
+				4DC7A208269AB19500687C35 /* MBOtpHeader.swift in Sources */,
 				4D8FBA9C2691C16800B0D13B /* UIColor+AppColors.swift in Sources */,
 				4DD7B5EE268618D900AD5F81 /* SceneDelegate.swift in Sources */,
 				4DB0B6202692CFE3006D691A /* MBProductScreenHeader.swift in Sources */,
 				4D76F9C22696AFC100CA69BD /* MBProductSideMenuViewController.swift in Sources */,
 				4DB302FB2691705B00A6F735 /* MBSideMenuHeader.swift in Sources */,
+				4DC7A211269AE53300687C35 /* MBPopupMenu.swift in Sources */,
+				4DC7A20D269AB48A00687C35 /* MBOTPVerificationViewController.swift in Sources */,
 				4D3DDAB22691645F00CB0A57 /* MBXibView.swift in Sources */,
 				4D4576E2269452D500A5305E /* MBProductsViewCell.swift in Sources */,
 				4D4576E026943A9600A5305E /* MBCardViewRadius.swift in Sources */,
