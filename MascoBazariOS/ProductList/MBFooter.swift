@@ -12,6 +12,7 @@ class MBFooter: MBXibView {
 
     @IBOutlet weak var bagCircleView: UIView!
     @IBOutlet weak var footerView: UIView!
+    var homeBtnHandler : ((Bool?) -> Void)?
     /*
     // Only override draw() if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.
@@ -19,6 +20,9 @@ class MBFooter: MBXibView {
         // Drawing code
     }
     */
+    @IBAction func homeBtn(_ sender: UIButton) {
+        self.homeBtnHandler?(true)
+    }
     
     @IBAction func myOrderBtn(_ sender: UIButton) {
         

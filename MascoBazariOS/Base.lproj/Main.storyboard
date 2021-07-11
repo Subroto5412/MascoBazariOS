@@ -352,37 +352,45 @@
                                                     <constraint firstItem="MhX-Jf-a7q" firstAttribute="centerY" secondItem="Uz9-As-tqj" secondAttribute="centerY" id="UuU-6b-eCd"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vzC-cX-gh3" customClass="MBFooter" customModule="MascoBazariOS" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="504" width="414" height="117"/>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                            </view>
                                         </subviews>
                                         <color key="backgroundColor" red="0.2099210322" green="0.20995694400000001" blue="0.20991316439999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="vzC-cX-gh3" secondAttribute="trailing" id="0Ky-eA-lQz"/>
                                             <constraint firstItem="Uz9-As-tqj" firstAttribute="top" secondItem="wFJ-5i-MYr" secondAttribute="bottom" constant="10" id="3Of-VW-RaS"/>
                                             <constraint firstItem="wFJ-5i-MYr" firstAttribute="height" secondItem="Scb-Ae-Jbu" secondAttribute="height" multiplier="100:621" id="Ef6-Mv-BLW"/>
-                                            <constraint firstItem="vzC-cX-gh3" firstAttribute="height" secondItem="Scb-Ae-Jbu" secondAttribute="height" multiplier="117:621" id="KDR-uG-F2m"/>
                                             <constraint firstItem="Uz9-As-tqj" firstAttribute="leading" secondItem="Scb-Ae-Jbu" secondAttribute="leading" constant="10" id="OpJ-OI-tT7"/>
                                             <constraint firstItem="wFJ-5i-MYr" firstAttribute="top" secondItem="Scb-Ae-Jbu" secondAttribute="top" id="UxB-ky-uwH"/>
                                             <constraint firstItem="wFJ-5i-MYr" firstAttribute="leading" secondItem="Scb-Ae-Jbu" secondAttribute="leading" id="W6l-Ge-aaj"/>
-                                            <constraint firstItem="vzC-cX-gh3" firstAttribute="leading" secondItem="Scb-Ae-Jbu" secondAttribute="leading" id="Wd3-eL-cVO"/>
                                             <constraint firstAttribute="trailing" secondItem="wFJ-5i-MYr" secondAttribute="trailing" id="igB-N6-hfg"/>
                                             <constraint firstItem="Uz9-As-tqj" firstAttribute="height" secondItem="Scb-Ae-Jbu" secondAttribute="height" multiplier="450:621" id="lQ8-Mm-zLH"/>
                                             <constraint firstAttribute="trailing" secondItem="Uz9-As-tqj" secondAttribute="trailing" constant="10" id="sbh-MR-Lxc"/>
-                                            <constraint firstAttribute="bottom" secondItem="vzC-cX-gh3" secondAttribute="bottom" id="y6J-hT-EfQ"/>
                                         </constraints>
+                                    </view>
+                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MpJ-fz-gm6">
+                                        <rect key="frame" x="0.0" y="115" width="414" height="570"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vzC-cX-gh3" customClass="MBFooter" customModule="MascoBazariOS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="619" width="414" height="117"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" red="0.20784479380000001" green="0.2078401446" blue="0.20784327389999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="vzC-cX-gh3" secondAttribute="trailing" id="3D7-G4-rak"/>
                                     <constraint firstItem="4mP-es-PqW" firstAttribute="height" secondItem="ZJb-ri-djX" secondAttribute="height" multiplier="115:736" id="9bu-jm-EEi"/>
                                     <constraint firstItem="Scb-Ae-Jbu" firstAttribute="height" secondItem="ZJb-ri-djX" secondAttribute="height" multiplier="621:736" id="9ev-vo-F8d"/>
+                                    <constraint firstItem="vzC-cX-gh3" firstAttribute="leading" secondItem="ZJb-ri-djX" secondAttribute="leading" id="HcX-rt-Eo8"/>
+                                    <constraint firstItem="MpJ-fz-gm6" firstAttribute="leading" secondItem="ZJb-ri-djX" secondAttribute="leading" id="JBc-QL-boV"/>
+                                    <constraint firstAttribute="trailing" secondItem="MpJ-fz-gm6" secondAttribute="trailing" id="R1R-GM-xak"/>
                                     <constraint firstItem="Scb-Ae-Jbu" firstAttribute="leading" secondItem="ZJb-ri-djX" secondAttribute="leading" id="RQZ-z9-9S7"/>
                                     <constraint firstAttribute="trailing" secondItem="Scb-Ae-Jbu" secondAttribute="trailing" id="TCI-IZ-nWy"/>
+                                    <constraint firstAttribute="bottom" secondItem="vzC-cX-gh3" secondAttribute="bottom" id="Tcv-Ko-Epi"/>
+                                    <constraint firstItem="MpJ-fz-gm6" firstAttribute="height" secondItem="ZJb-ri-djX" secondAttribute="height" multiplier="570:736" id="Zti-Mo-ldZ"/>
                                     <constraint firstItem="4mP-es-PqW" firstAttribute="top" secondItem="ZJb-ri-djX" secondAttribute="top" id="c7E-qP-kkd"/>
                                     <constraint firstAttribute="trailing" secondItem="4mP-es-PqW" secondAttribute="trailing" id="cEu-zD-Q6O"/>
+                                    <constraint firstItem="vzC-cX-gh3" firstAttribute="height" secondItem="ZJb-ri-djX" secondAttribute="height" multiplier="117:736" id="czA-1Z-nSj"/>
                                     <constraint firstItem="4mP-es-PqW" firstAttribute="leading" secondItem="ZJb-ri-djX" secondAttribute="leading" id="qcq-VR-Cfd"/>
+                                    <constraint firstItem="MpJ-fz-gm6" firstAttribute="top" secondItem="4mP-es-PqW" secondAttribute="bottom" id="wZh-gD-bFg"/>
                                     <constraint firstItem="Scb-Ae-Jbu" firstAttribute="top" secondItem="4mP-es-PqW" secondAttribute="bottom" id="yz7-tc-cid"/>
                                 </constraints>
                             </view>
@@ -440,6 +448,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="accountProfileView" destination="MpJ-fz-gm6" id="ISU-Pv-Mix"/>
                         <outlet property="collectionView" destination="MhX-Jf-a7q" id="uGI-eJ-k9w"/>
                         <outlet property="footerView" destination="vzC-cX-gh3" id="8SM-G4-gQ8"/>
                         <outlet property="leadingConstantForMenuView" destination="Npf-zp-IPE" id="d72-vz-xId"/>

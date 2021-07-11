@@ -28,6 +28,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     private var beginPoint:CGFloat = 0.0
     private var difference:CGFloat = 0.0
     
+    @IBOutlet weak var accountProfileView: UIView!
     @IBOutlet weak var popUpMenuView: MBPopupMenu!
     var arrlbl = ["Watch1","Watch2","Watch3","Watch4","Watch5","Watch6","Watch7","Watch8","Watch9","Watch10","Watch11","Watch12","Watch13","Watch14","Watch15","Watch16","Watch17","Watch18","Watch19","Watch20"]
     
@@ -39,6 +40,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         // Do any additional setup after loading the view.
         cornerRoundView()
         self.menuBackgroundView.isHidden = true
+        popUpMenuHandler()
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -209,5 +211,34 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
 //            }
 //        }
 //    }
+    
+    func popUpMenuHandler(){
+        
+        self.footerView.homeBtnHandler = {
+                   [weak self] (isShow) in
+                   guard let weakSelf = self else {
+                   return
+                  }
+               weakSelf.showHomeBtnHandler()
+           }
+        
+        self.popUpMenuView.accountInformationBtnHandler = {
+                   [weak self] (isShow) in
+                   guard let weakSelf = self else {
+                   return
+                  }
+               weakSelf.showAccountInformationBtnHandler()
+           }
+        
+    }
+    
+    func showAccountInformationBtnHandler() {
+        self.accountProfileView.isHidden = false
+        self.popUpMenuView.isHidden = true
+    }
+    
+    func showHomeBtnHandler() {
+        self.accountProfileView.isHidden = true
+    }
 }
 
